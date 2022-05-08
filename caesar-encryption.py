@@ -5,13 +5,12 @@ def encrypt(text:int, rot:int, abc:str) -> str:
 	Encrypt the text
 
 	Args:
-		text (int): _description_
-		rot (int): _description_
-		abc (str): _description_
-		abc_list (str): _description_
+		text (int): input
+		rot (int): rotations
+		abc (str): abc
 
 	Returns:
-		str: _description_
+		str: returns encrypted text
 	"""
 	temp = ""
 	for i in text:
@@ -27,13 +26,12 @@ def decrypt(text:int, rot:int, abc:str) -> str:
 	Decrypt the text
 
 	Args:
-		text (int): _description_
-		rot (int): _description_
-		abc (str): _description_
-		abc_list (str): _description_
+		text (int): input
+		rot (int): rotations
+		abc (str): abc
 
 	Returns:
-		str: _description_
+		str: returns decrypted text
 	"""
 	temp = ""
 	for i in text:
@@ -53,7 +51,7 @@ def main(text:str, rot:int, inp:int) -> str:
 		rot (_type_, optional): rotation (by how many places it shifts).
 
 	Returns:
-		_type_: _description_
+		str: returns encrypted/decrypted text or another string
 	"""
 
 	text = text.upper()
