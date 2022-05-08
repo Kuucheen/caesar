@@ -1,6 +1,6 @@
 import string
 
-def encrypt(text:int, rot:int, abc:str) -> str:
+def encrypt(text:str, rot:int, abc:str) -> str:
 	"""
 	Encrypt the text
 
@@ -21,7 +21,7 @@ def encrypt(text:int, rot:int, abc:str) -> str:
 			temp += i
 	return temp
 
-def decrypt(text:int, rot:int, abc:str) -> str:
+def decrypt(text:str, rot:int, abc:str) -> str:
 	"""
 	Decrypt the text
 
